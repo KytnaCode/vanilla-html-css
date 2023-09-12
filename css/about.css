@@ -1,0 +1,81 @@
+#about {
+  height: fit-content;
+  position: relative;
+  padding: 5% 7% 5% 7%;
+  font-size: 150%;
+}
+
+#about p {
+  font-size: 110%;
+  text-align: justify;
+}
+
+#about h2 {
+  z-index: 30;
+}
+
+#about .quote {
+  width: 70%;
+  height: 25%;
+  position: static;
+  margin: 0 auto; 
+  background: var(--white);
+  padding: 3rem;
+  border-radius: 20px;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: var(--sans);
+  font-style: italic;
+  text-align: justify;
+}
+
+#about .quote p {
+  text-align: end;
+  font-size: 100%;
+}
+
+#about .divider {
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/*#about .gradient {
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-20%);
+  background-image: linear-gradient(to bottom, var(--black) 0%, var(--white) 100%);
+  z-index: 10;
+}*/
+
+@keyframes fade-in {
+  0% {
+    transform: translate(-50%, 0%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(-50%, -10%);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 850px) {
+  #about {
+    padding-top: 20%;
+  }
+
+  #about .quote {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    animation: fade-in forwards 300ms ease-in-out 600ms;
+  }
+}

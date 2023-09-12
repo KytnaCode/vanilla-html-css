@@ -1,0 +1,195 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A basic vanilla html & css example" />
+    <meta name="autor" content="Kytnacode" />
+    <title>Vanilla HTML Example</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/intro.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/about.css" />
+    <link rel="stylesheet" href="/css/experience.css" />
+    <link rel="stylesheet" href="/css/resumen.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul>
+        <li class="first" aria-label="Ir a la página principal">
+          <h1 aria-label="Ir a la página principal">
+            <a href="/">
+              <span class="fa-solid fa-bolt fa-xl"></span>
+              Alejandro Paz
+            </a>
+          </h1>
+        </li>
+        <div aria-hidden="true" class="hspace"></div>
+        <li tabindex="0">
+          <a href="#about">Sobre Mi</a>
+        </li>
+        <li>
+          <a href="#experience">Experiencia</a>
+        </li>
+        <li tabindex="0">
+          <a
+            aria-label="Ve a mi perfil de github"
+            href="https://github.com/KytnaCode"
+          >
+            <span class="fa-brands fa-github fa-2xl" aria-hidden="true"></span>
+            <span class="sr-only">Github</span>
+          </a>
+        </li>
+        <li>
+          <a href="#resumen" class="button">Síntesis</a>
+        </li>
+      </ul>
+
+      <div aria-hidden="true" class="divider" />
+    </nav>
+    <main>
+      <section id="intro">
+        <div class="text-container">
+          <p class="white">Soy...</p>
+          <h2 class="secondary">Alejandro Paz Gómez.</h2>
+          <h2 class="primary primary-shine">
+            Yo Pongo el Código, Tu Las Ideas.
+          </h2>
+          <p class="white">
+            Desarrollador Full-Stack especializado en HTML, CSS,
+            JavaScript/TypeScript, React y Nestjs.
+          </p>
+        </div>
+
+        <div class="border"></div>
+      </section>
+
+      <section id="about">
+        <div class="quote">
+          <h3>
+            "Nunca es muy pronto para aprender, nunca somos muy jovenes para
+            empezar, puedes dejar algo para mañana pero no para ayer"
+          </h3>
+          <p>- Alejandro Paz Gómez</p>
+        </div>
+
+        <h2 id="about-title">Hablando de mi...</h2>
+
+        <p>
+          Soy Alejandro Paz Gómez, un estudiante de 15 años en busca de
+          conseguir un futuro en el mundo del desarrollo web Full-Stack, empeze
+          desde los 12 años por curiosidad aunque no lo hice en Front-End o
+          Back-End, si no que en el desarrollo de videojuegos con Unity y C#,
+          pero ya desde los 13 años que persiguio futuro un como desarrollador
+          web.
+          <br />
+          <br />
+          Tengo experiencia con <b>HTML</b>, <b>CSS</b> (y algunos de su
+          preprocesadores, SCSS, SASS) y <b>JavaScript y TypeScript</b>, además
+          he trabajado con frameworks como <b>ReactJS</b>, <b>Next.js</b>,
+          <b>Svelte</b> y para desarrollo Front-End, y con <b>ExpressJS</b>, y
+          <b>NestJS</b> para el lado del Back-End.
+        </p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section id="experience">
+        <h2>Los proyectos que he hecho...</h2>
+
+        <article id="this-page">
+          <div class="text">
+            <h4>Esta Página</h4>
+            <h3 class="project-name">Portafolio</h3>
+
+            <p class="blackbox">
+              Esta página es la primera versión de mi portafolio, estuve
+              trabajando en ella aproximadamente una semana. Solo utilice HTML y
+              CSS vanilla para mejorar mi dominio en dichas tecnologias, yo
+              mismo creé la paleta de colores utilizada, me base en el curso de
+              <a href="https://frontendmasters.com/">Frontend Masters</a>
+              <span>Getting Started With CSS</span>, aunque hice mi propio
+              diseño con los elementos de CSS aprendidos en el curso.
+            </p>
+
+            <h4>Técnologias Utilizadas:</h4>
+
+            <ul>
+              <li>
+                <p>HTML</p>
+              </li>
+              <li>
+                <p>CSS</p>
+              </li>
+            </ul>
+          </div>
+
+          <img class="content" src="/img/thispage.png" />
+        </article>
+
+        <h2 class="project-title">Otros</h2>
+
+        <p>
+          Tengo algunos ejemplos de código en JavaScript en mi perfil de
+          <a
+            href="https://github.com/KytnaCode"
+            aria-label="Ver perfil en github"
+            >Github</a
+          >
+        </p>
+        .
+      </section>
+
+      <div class="divider"></div>
+
+      <section id="resumen">
+        <h2>En Sintesis...</h2>
+
+        <p>
+          Soy un estudiante de 15 años con 2 años de experiencia en el
+          desarrollo Web Full-Stack especializado en JavaScript y TypeScript;
+          CSS, (y SCSS, SASS), <b>React</b>, <b>Next.js</b>, <b>Svelte</b>,
+          <b>ExpressJS</b> y <b>NestJS</b>.
+        </p>
+        <div class="border"></div>
+      </section>
+
+      <footer>
+        <h2>Alejandro Paz Gómez</h2>
+        <h3>Desarrollador Full-Stack</h3>
+
+        <ul>
+          <li>
+            <a href="https://github.com/KytnaCode">
+              <span
+                class="fa-brands fa-github fa-2xl"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Github</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto:kytnacode@gmail.com">
+              <span class="fa-solid fa-envelope fa-2xl"></span>
+              <span class="sr-only">Email</span>
+            </a>
+          </li>
+        </ul>
+
+        <p>
+          <small>&copy; 2023 Alejandro Paz Gómez. All Rights Reserved.</small>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
