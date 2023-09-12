@@ -1,3 +1,5 @@
 #!/bin/sh
 
-python3 -m http.server 9999
+[[ -z "${PORT}" ]] && HTTP_PORT=9999 || HTTP_PORT="$[PORT]"
+
+python3 -m http.server $HTTP_PORT
